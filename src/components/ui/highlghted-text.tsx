@@ -1,13 +1,9 @@
 import { chakra, ChakraComponent } from '@chakra-ui/react'
 
-export const HighlightedText: React.FC<ChakraComponent<'span'>> = (
+export const HighlightedText: ChakraComponent<'span', any> = (
   props: any
 ): JSX.Element => (
-  <chakra.span
-    bgGradient="linear(to-r, purple.500, purple.700)"
-    bgClip="text"
-    {...props}
-  >
+  <chakra.span color="white" bg="black" {...props}>
     {props.children}
   </chakra.span>
 )

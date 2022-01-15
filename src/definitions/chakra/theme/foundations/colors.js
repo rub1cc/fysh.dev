@@ -1,6 +1,6 @@
 export default {
   brand: {
-    purple: '#5866e8',
+    primary: '#007FFF',
   },
   blueGray: {
     900: '#0F172A',

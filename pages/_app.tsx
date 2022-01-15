@@ -9,6 +9,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { Hydrate } from 'react-query/hydration'
 import theme from '~/definitions/chakra/theme'
+import '@fontsource/ibm-plex-sans'
 import '~/styles/global.css'
 
 const progress = new ProgressBar({

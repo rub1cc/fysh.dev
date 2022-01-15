@@ -5,19 +5,19 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Container,
   Heading,
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { HighlightedText } from './highlghted-text'
+import { BaseContainer } from '../ui/base-container'
+import { HighlightedText } from '../ui/highlghted-text'
 
 export const LandingFAQSection = (): JSX.Element => {
   return (
     <Box py={24}>
-      <Container maxW="6xl">
+      <BaseContainer>
         <Stack spacing={0}>
-          <Text color="purple.500" fontWeight="bold" fontSize="sm">
+          <Text color="blue.500" fontWeight="bold" fontSize="sm">
             Lorem, ipsum dolor.
           </Text>
           <Heading
@@ -52,7 +52,7 @@ export const LandingFAQSection = (): JSX.Element => {
             </AccordionItem>
           ))}
         </Accordion>
-      </Container>
+      </BaseContainer>
     </Box>
   )
 }
